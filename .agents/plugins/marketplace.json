@@ -1,0 +1,7 @@
+{
+  "name": "labcubes-plugin-market",
+  "interface": {
+    "displayName": "LabCubes Plugin Market"
+  },
+  "plugins": []
+}
