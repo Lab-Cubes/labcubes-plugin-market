@@ -3,5 +3,18 @@
   "interface": {
     "displayName": "LabCubes Plugin Market"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "iris-console",
+      "source": {
+        "source": "local",
+        "path": "./plugins/iris-console"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
 }
