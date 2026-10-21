@@ -29,6 +29,17 @@ investment and development workflows through 18 coordinated Skills. See the
 codex plugin add iris-console@labcubes-plugin-market
 ```
 
+### Cypress-timeline 0.1.0
+
+Create milestone progress presentations as interactive Web/HTML, MP4, or both.
+The outer frame stays visible while the main picture crossfades. Use PixVerse
+for generated media and Sites for hosted delivery; local existing-asset exports
+need neither connection. See the [plugin README](plugins/cypress-timeline/README.md).
+
+```bash
+codex plugin add cypress-timeline@labcubes-plugin-market
+```
+
 ## Structure and standards
 
 The ordered catalog lives at `.agents/plugins/marketplace.json`. Add
