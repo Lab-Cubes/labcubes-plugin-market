@@ -1,0 +1,59 @@
+{
+  "name": "cypress-timeline",
+  "version": "0.1.0",
+  "description": "Reference-based milestone progress reports as interactive Web and MP4.",
+  "author": {
+    "name": "LabCubes",
+    "url": "https://github.com/Lab-Cubes"
+  },
+  "repository": "https://github.com/Lab-Cubes/labcubes-plugin-market",
+  "license": "MIT",
+  "keywords": [
+    "timeline",
+    "progress",
+    "construction",
+    "web",
+    "mp4",
+    "pixverse",
+    "sites"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Cypress-timeline",
+    "shortDescription": "Web and MP4 progress timelines",
+    "longDescription": "Build milestone progress reports from reference images and a shared schedule. Keep the outer frame stable while pictures crossfade, export offline interactive HTML or 1080p MP4, and use PixVerse for new media and Sites for hosted Web delivery.",
+    "developerName": "LabCubes",
+    "category": "Creativity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/Lab-Cubes/labcubes-plugin-market/tree/main/plugins/cypress-timeline",
+    "defaultPrompt": [
+      "Create a Web and MP4 progress timeline from my starting and finished reference images.",
+      "只做离线 HTML，外框固定、主图渐变，支持暂停与节点跳转。"
+    ]
+  },
+  "extensions": {
+    "org.labcubes.timeline": {
+      "workflowDependencies": [
+        {
+          "plugin": "pixverse@openai-curated-remote",
+          "reviewedVersion": "1.3.3",
+          "requiredFor": [
+            "new-media",
+            "advanced-editing"
+          ]
+        },
+        {
+          "plugin": "sites@openai-curated-remote",
+          "reviewedVersion": "1.1.0",
+          "requiredFor": [
+            "hosted-web"
+          ]
+        }
+      ],
+      "dependencyInstallation": "workflow-checked; no native auto-installation"
+    }
+  }
+}
