@@ -29,7 +29,7 @@ investment and development workflows through 18 coordinated Skills. See the
 codex plugin add iris-console@labcubes-plugin-market
 ```
 
-### Cypress-timeline 0.1.0
+### Cypress-timeline 0.1.1
 
 Create milestone progress presentations as interactive Web/HTML, MP4, or both.
 The outer frame stays visible while the main picture crossfades. Use PixVerse
