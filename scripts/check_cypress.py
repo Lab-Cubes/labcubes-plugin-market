@@ -19,7 +19,7 @@ def main() -> None:
     legacy = json.loads((package / ".codex-plugin/plugin.json").read_text())
     assert portable["$schema"] == "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json"
     assert portable["name"] == legacy["name"] == "cypress-timeline"
-    assert portable["version"] == legacy["version"] == "0.1.0"
+    assert portable["version"] == legacy["version"] == "0.1.1"
     interface = portable["extensions"]["com.openai"]["interface"]
     assert interface == legacy["interface"]
     assert len(interface["shortDescription"]) <= 30
@@ -37,7 +37,7 @@ def main() -> None:
         assert path.resolve().is_relative_to(package), path
         if path.is_file():
             assert path.suffix not in (".mp4", ".jpg", ".png", ".pyc"), path
-    for required in ("scripts/build_timeline.py", "assets/player.html", "references/dependencies.md", "references/timeline-spec.md", "agents/openai.yaml"):
+    for required in ("scripts/build_timeline.py", "assets/player.html", "references/dependencies.md", "references/timeline-spec.md", "references/project-inputs.md", "agents/openai.yaml"):
         assert (skill / required).is_file(), required
     print("Cypress manifests, catalog, dependencies and package boundaries verified")
 

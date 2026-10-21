@@ -1,6 +1,6 @@
-# Cypress-timeline 0.1.0
+# Cypress-timeline 0.1.1
 
-Turn start/end reference images and project milestones into an interactive Web
+Turn available site/design references and project milestones into an interactive Web
 timeline, an MP4 progress report, or both. The outer presentation frame stays
 visible while the main image changes. Chinese and English annotations are supported.
 
@@ -15,8 +15,17 @@ Example requests:
 - “保留已有时间线，只修复 MP4 转场时外框变黑的问题。”
 
 Start with [the timeline Skill](skills/timeline/SKILL.md), then the
-[input contract](skills/timeline/references/timeline-spec.md) and
+[project input classification](skills/timeline/references/project-inputs.md),
+[renderer contract](skills/timeline/references/timeline-spec.md) and
 [dependency contract](skills/timeline/references/dependencies.md).
+
+House-and-land inputs need not be complete. Classify the existing site separately
+from design availability: an old house or vacant land can each have no design,
+partial drawings or a supplied render. Preserve known design decisions, identify
+generated concepts and inferred views, and include demolition only for the
+applicable work. Separate preconstruction from site construction estimates.
+These are agent workflow instructions; the renderer still takes prepared stage
+images, not raw drawing uploads or an automatically verified intake form.
 
 PixVerse supplies new generated media and advanced video/audio editing. Sites
 supplies hosted Web delivery. Dependencies are checked by the workflow; this

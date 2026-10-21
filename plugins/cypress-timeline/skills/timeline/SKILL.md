@@ -1,6 +1,6 @@
 ---
 name: timeline
-description: "Create or revise milestone progress reports from starting and completed reference images, project stages, or dated photos. Use Cypress-timeline for construction progress, renovation timelines, before-and-after project presentations, interactive Web/HTML timelines, MP4 progress videos, or both formats."
+description: "Create or revise milestone progress reports from available site photos, partial or complete designs, project stages, or dated photos. Use Cypress-timeline for house-and-land packages with an existing house or vacant land, construction progress, renovation timelines, interactive Web/HTML timelines, MP4 reports, or both."
 ---
 
 # Cypress-timeline
@@ -25,6 +25,21 @@ to the main picture. Use one timeline and one asset set for Web and MP4 outputs.
    cross-plugin auto-installer. Never claim a dependency was installed without
    observing installation. Follow provider authentication and spending gates.
 
+## Classify inputs before planning
+
+Read [the project input contract](references/project-inputs.md). Classify site
+state, intended work and design availability independently; inventory the actual
+assets and their revisions. Accept incomplete inputs: an existing house or vacant
+land can each have no design, partial drawings or a supplied finished render.
+Do not require both a vacant-land photograph and an approved completion image.
+
+For a rebuild, include demolition/clearance when still required; for renovation,
+retain the building. If no target image exists, propose a labelled concept or
+derive the missing view from supplied drawings within the authorized scope.
+Distinguish a presentation target selected by the user from statutory approval.
+Resolve material design conflicts before generating dependent stages. Record
+each asset's origin and each stage's observed/forecast/illustrative status.
+
 ## Plan the timeline
 
 - Identify the initial state, exact final target, milestones, timing, audience,
@@ -36,8 +51,10 @@ to the main picture. Use one timeline and one asset set for Web and MP4 outputs.
 - Preserve the site's footprint, camera, tree and neighbouring geometry across
   exterior stages. Use a different viewpoint only when it conveys meaningful
   progress, such as interior fit-off. Label invented interiors as conceptual.
-- Keep the user's original photo as the starting state and approved finished
-  image as the final state. Generate only missing intermediate assets.
+- Keep the user's actual starting photo and selected finished reference where
+  supplied. Otherwise prepare clearly labelled illustrative starting/target
+  images under the input contract. Generate only missing required assets; do not
+  replace supplied design decisions or claim generated views are actual photos.
 - Explain whether the deliverable is a keyframe presentation or generated motion.
   Keep factual annotations and exact typography in deterministic composition.
 
@@ -85,7 +102,9 @@ python3 <skill-root>/scripts/build_timeline.py /project/timeline.json \
 
 ## Acceptance criteria
 
-The requested formats exist and open; the initial/final references are retained;
+The requested formats exist and open; input classification and conditional stages
+match the evidence and intended work; supplied initial/final references are retained;
 annotations and timing share the same source; external shell pixels never fade;
 Web controls work; the MP4 probes successfully; estimated progress is not
-misrepresented as an actual site record or engineering certification.
+misrepresented as an actual site record or engineering certification; inferred
+designs are labelled and the schedule's included periods and origin are explicit.

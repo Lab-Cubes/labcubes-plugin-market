@@ -1,5 +1,15 @@
 # Timeline specification
 
+First classify the available material using [the project input contract](project-inputs.md).
+The private intake brief may contain incomplete or non-image design documents;
+this renderer spec contains the prepared presentation stages, not raw uploads.
+Missing site or completion photographs can be replaced by explicitly labelled
+illustrative views when appropriate. Record actual/forecast/concept status in
+each stage's label or description and relevant assumptions in `disclosure`;
+both outputs use these annotations. Keep source inventory and private intake
+notes outside this exported JSON. No intake parser or automatic design/approval
+verification is implemented by the renderer.
+
 Use a UTF-8 JSON object. Asset paths resolve from the spec's directory and must
 remain inside it, including through symlinks. PNG/JPEG/WebP only; the renderer
 never follows remote image URLs or accepts HTML/SVG as image assets.
