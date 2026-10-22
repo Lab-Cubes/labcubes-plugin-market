@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cypress-timeline",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Address- or reference-led rebuild simulations and milestone reports as Web and MP4.",
   "author": {
     "name": "LabCubes",

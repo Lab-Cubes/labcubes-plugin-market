@@ -29,15 +29,16 @@ investment and development workflows through 18 coordinated Skills. See the
 codex plugin add iris-console@labcubes-plugin-market
 ```
 
-### Cypress-timeline 0.2.2
+### Cypress-timeline 0.2.3
 
 Create milestone progress presentations as interactive Web/HTML, MP4, or both.
 Start from site/design references or an Australian address for a sourced,
 hypothetical demolition-and-rebuild presentation.
 Reports default to 30 seconds across milestones unless custom timing is supplied.
-The outer frame stays visible while the main picture crossfades. Use PixVerse
-for generated media and Sites for hosted delivery; local existing-asset exports
-need neither connection. See the [plugin README](plugins/cypress-timeline/README.md).
+The outer frame stays visible while the main picture crossfades. Prefer available
+PixVerse workflows for generated media and use Sites for hosted delivery;
+local existing-asset exports need neither connection.
+See the [plugin README](plugins/cypress-timeline/README.md).
 
 ```bash
 codex plugin add cypress-timeline@labcubes-plugin-market
