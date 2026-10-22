@@ -29,7 +29,7 @@ investment and development workflows through 18 coordinated Skills. See the
 codex plugin add iris-console@labcubes-plugin-market
 ```
 
-### Cypress-timeline 0.2.0
+### Cypress-timeline 0.2.1
 
 Create milestone progress presentations as interactive Web/HTML, MP4, or both.
 Start from site/design references or an Australian address for a sourced,
