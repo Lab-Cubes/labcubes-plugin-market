@@ -1,4 +1,4 @@
-# Cypress-timeline 0.2.2
+# Cypress-timeline 0.2.3
 
 Turn available site/design references and project milestones into an interactive Web
 timeline, an MP4 progress report, or both. The outer presentation frame stays
@@ -38,8 +38,14 @@ sources and a labelled concept. This uses host research capabilities; it does no
 provide a standalone address API or guarantee approval, exact site geometry or
 third-party imagery reuse. Source links and required credits accompany outputs.
 
-PixVerse supplies new generated media and advanced video/audio editing. Sites
-supplies hosted Web delivery. Dependencies are checked by the workflow; this
+Prefer PixVerse whenever its plugin/workflow is available for new images,
+construction-stage stills, videos, audio and advanced media editing. Read its
+workflow before choosing a generator. A present plugin with a missing runtime,
+login or entitlement follows PixVerse setup/preflight rather than a silent
+provider switch. Explicit user provider choices and host requirements take
+precedence; disclose an absent plugin or unsupported capability before using
+another provider. Existing accepted assets remain reusable without generation.
+Sites supplies hosted Web delivery. Dependencies are checked by the workflow; this
 skills-only package does not automatically install other plugins. Existing local
 images can produce offline HTML without either connection. The bundled MP4 path
 requires Python 3.10+, FFmpeg/ffprobe and a language-capable font; it exports a
