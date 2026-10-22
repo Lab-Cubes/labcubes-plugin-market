@@ -1,4 +1,4 @@
 interface:
   display_name: "Cypress Timeline"
   short_description: "Create Web and MP4 timeline progress reports"
-  default_prompt: "Use $timeline to classify my available site photos and design references, prepare missing concept views, and create the requested timeline report."
+  default_prompt: "Use $timeline to research my Australian address or classify supplied site/design references, then create a hypothetical rebuild timeline as Web, MP4, or both."
