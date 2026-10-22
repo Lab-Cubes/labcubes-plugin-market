@@ -5,6 +5,11 @@ house-and-land package. A complete set of photographs and drawings is not an
 entry requirement. Classify supplied evidence separately from intended work;
 never infer permission to demolish from a photograph of an existing house.
 
+An address or listing URL is also sufficient to start. Follow
+[address-to-rebuild](address-rebuild.md) to retrieve permitted site evidence and
+prepare the brief before choosing the relevant combination below. Address-only
+input does not imply a vacant site, a whole-site title or an approved design.
+
 - [Record the brief](#record-the-brief)
 - [Route the available combinations](#route-the-available-combinations)
 - [Build the applicable sequence](#build-the-applicable-sequence)

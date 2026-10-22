@@ -1,6 +1,6 @@
 ---
 name: timeline
-description: "Create or revise milestone progress reports from available site photos, partial or complete designs, project stages, or dated photos. Use Cypress-timeline for house-and-land packages with an existing house or vacant land, construction progress, renovation timelines, interactive Web/HTML timelines, MP4 reports, or both."
+description: "Create or revise Web/HTML and MP4 milestone reports from an Australian address, property/listing URL, site photos or designs. Use Cypress-timeline for address-based demolition/rebuild simulations, house-and-land packages with incomplete references, construction progress, renovation timelines, or both output formats."
 ---
 
 # Cypress-timeline
@@ -26,6 +26,13 @@ to the main picture. Use one timeline and one asset set for Web and MP4 outputs.
    observing installation. Follow provider authentication and spending gates.
 
 ## Classify inputs before planning
+
+For an address or property/listing URL, first follow [address-to-rebuild](references/address-rebuild.md):
+resolve the property/lot scope, research permitted map/property/official sources,
+and prepare a source-backed site brief. Accept address-only requests; photos and
+designs can be prepared later. Keep reported facts, assumptions and unknowns
+separate. A request for a hypothetical rebuild supplies the work type without
+claiming demolition is permitted or the property has been surveyed.
 
 Read [the project input contract](references/project-inputs.md). Classify site
 state, intended work and design availability independently; inventory the actual
@@ -108,3 +115,5 @@ annotations and timing share the same source; external shell pixels never fade;
 Web controls work; the MP4 probes successfully; estimated progress is not
 misrepresented as an actual site record or engineering certification; inferred
 designs are labelled and the schedule's included periods and origin are explicit.
+For address-led work, the selected property scope matches the evidence, source
+links/attribution accompany outputs and inferred site geometry remains labelled.

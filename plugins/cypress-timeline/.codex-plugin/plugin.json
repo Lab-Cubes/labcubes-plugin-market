@@ -1,7 +1,7 @@
 {
   "name": "cypress-timeline",
-  "version": "0.1.1",
-  "description": "Reference-based milestone progress reports as interactive Web and MP4.",
+  "version": "0.2.0",
+  "description": "Address- or reference-led rebuild simulations and milestone reports as Web and MP4.",
   "author": {
     "name": "LabCubes",
     "url": "https://github.com/Lab-Cubes"
@@ -15,13 +15,15 @@
     "web",
     "mp4",
     "pixverse",
-    "sites"
+    "sites",
+    "address",
+    "rebuild"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Cypress-timeline",
     "shortDescription": "Web and MP4 progress timelines",
-    "longDescription": "Build milestone progress reports from reference images and a shared schedule. Keep the outer frame stable while pictures crossfade, export offline interactive HTML or 1080p MP4, and use PixVerse for new media and Sites for hosted Web delivery.",
+    "longDescription": "Research an Australian address or use supplied site/design references to create hypothetical rebuild and milestone reports. Keep the outer frame stable while pictures crossfade, export offline interactive HTML or 1080p MP4, and use PixVerse for media and Sites for hosting.",
     "developerName": "LabCubes",
     "category": "Creativity",
     "capabilities": [
