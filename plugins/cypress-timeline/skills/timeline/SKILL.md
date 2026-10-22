@@ -49,6 +49,10 @@ each asset's origin and each stage's observed/forecast/illustrative status.
 
 ## Plan the timeline
 
+- Default the whole presentation to 30 seconds, with equal time per displayed
+  milestone. Omit stage `seconds` to use the renderer's 30/N allocation; preserve
+  explicitly requested total/per-stage timing. Keep Web's initial playback at
+  1× so its normal running time matches the MP4, rather than accelerating twice.
 - Identify the initial state, exact final target, milestones, timing, audience,
   language and source assets. Distinguish forecast, actual and illustrative states.
 - For construction, separate design/approvals/preconstruction from site work.

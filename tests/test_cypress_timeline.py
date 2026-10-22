@@ -53,6 +53,20 @@ class TimelineTests(unittest.TestCase):
         self.assertIn("prefers-reduced-motion", html)
         self.assertIn("requestFullscreen", html)
 
+    def test_default_report_is_30_seconds_and_custom_timing_is_preserved(self):
+        for count in (2, 7, 9, 30):
+            self.data["stages"] = [
+                {"title": str(i), "label": str(i), "description": "Concept", "week": i, "image": "one.png"}
+                for i in range(count)
+            ]
+            timeline = self.load()
+            self.assertEqual(timeline["duration"], 30)
+            self.assertAlmostEqual(timeline["stages"][-1]["start"] + timeline["stages"][-1]["seconds"], 30)
+        self.data["stages"][0]["seconds"] = 5
+        timeline = self.load()
+        self.assertEqual(timeline["stages"][0]["seconds"], 5)
+        self.assertEqual(timeline["duration"], 34)
+
     def test_script_injection_and_unknown_data_are_not_exported(self):
         self.data["title"] = "</script><script>alert(1)</script>"
         self.data["secret"] = "do-not-copy-private-metadata"
