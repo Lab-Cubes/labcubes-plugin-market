@@ -1,4 +1,4 @@
-# Cypress-timeline 0.2.0
+# Cypress-timeline 0.2.1
 
 Turn available site/design references and project milestones into an interactive Web
 timeline, an MP4 progress report, or both. The outer presentation frame stays
