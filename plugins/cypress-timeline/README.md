@@ -1,4 +1,4 @@
-# Cypress-timeline 0.2.1
+# Cypress-timeline 0.2.2
 
 Turn available site/design references and project milestones into an interactive Web
 timeline, an MP4 progress report, or both. The outer presentation frame stays
@@ -45,6 +45,10 @@ images can produce offline HTML without either connection. The bundled MP4 path
 requires Python 3.10+, FFmpeg/ffprobe and a language-capable font; it exports a
 silent 1920×1080 keyframe report. Continuous generated motion is a separate,
 explicit PixVerse route and may require account entitlement and credits.
+
+The default whole report is 30 seconds, divided equally across milestones and
+shared by Web at 1× and MP4. Explicitly supplied stage timing remains effective;
+revisions do not silently shorten a user's custom timing.
 
 One timeline JSON drives both formats. Web playback supports pause, scrub,
 milestone selection, speed and fullscreen. HTML embeds assets for offline use.

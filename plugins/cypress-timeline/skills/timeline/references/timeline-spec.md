@@ -21,8 +21,8 @@ never follows remote image URLs or accepts HTML/SVG as image assets.
   "disclosure": "AI 概念推演，非实际记录；不含设计审批及开工前准备。",
   "image_fit": "contain",
   "stages": [
-    {"title":"空地现状","label":"开工前","week":0,"seconds":7.5,"description":"测量与场地准备。","image":"assets/start.jpg"},
-    {"title":"验收交付","label":"第 44 周（假设）","week":44,"seconds":7.5,"description":"验收、整改、清洁与移交。","image":"assets/finish.jpg"}
+    {"title":"空地现状","label":"开工前","week":0,"description":"测量与场地准备。","image":"assets/start.jpg"},
+    {"title":"验收交付","label":"第 44 周（假设）","week":44,"description":"验收、整改、清洁与移交。","image":"assets/finish.jpg"}
   ]
 }
 ```
@@ -30,7 +30,11 @@ never follows remote image URLs or accepts HTML/SVG as image assets.
 `title`, `subtitle`, `disclosure` are required nonblank text. Each of 2–30 stages
 requires `title`, `label`, `description`, `image`, and a finite nonnegative `week`.
 Weeks must be nondecreasing; they are labels and do not imply actual completion.
-`seconds` defaults to 7.5 and must be 1–120; total running time is at most 30 minutes.
+Each omitted `seconds` defaults to 30 divided by the number of stages, producing
+a 30-second report when all stages omit it (nine stages: 3⅓ seconds each).
+Explicit stage durations are preserved and must be 1–120; mixing explicit and
+omitted values can produce a total other than 30 seconds. For a requested total,
+assign explicit durations that sum to that total. Maximum runtime is 30 minutes.
 `image_fit` is `contain` (default, preserve full image) or `cover` (crop to fill).
 
 The progress track indicates presentation position, not a physical percent complete.

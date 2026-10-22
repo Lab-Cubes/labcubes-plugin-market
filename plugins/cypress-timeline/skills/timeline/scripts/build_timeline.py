@@ -32,6 +32,7 @@ def load_timeline(path: Path) -> dict:
     stages = data.get("stages")
     if not isinstance(stages, list) or not 2 <= len(stages) <= 30:
         raise ValueError("Provide 2 to 30 ordered stages")
+    default_seconds = 30.0 / len(stages)
     previous_week = -1.0
     total = 0.0
     for stage in stages:
@@ -42,7 +43,7 @@ def load_timeline(path: Path) -> dict:
                 raise ValueError(f"Stage {field} must be nonblank text")
             if len(stage[field]) > 2000:
                 raise ValueError(f"Stage {field} is too long")
-        seconds = stage.get("seconds", 7.5)
+        seconds = stage.get("seconds", default_seconds)
         week = stage.get("week")
         for name, value in (("seconds", seconds), ("week", week)):
             if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
@@ -68,7 +69,8 @@ def load_timeline(path: Path) -> dict:
         total += seconds
     if total > 1800:
         raise ValueError("Timeline exceeds 30 minutes")
-    data["duration"] = total
+    # Avoid a 29-second end clock from floating-point summation of a 30s plan.
+    data["duration"] = round(total, 9)
     data["image_fit"] = data.get("image_fit", "contain")
     if data["image_fit"] not in ("contain", "cover"):
         raise ValueError("image_fit must be contain or cover")
