@@ -24,6 +24,9 @@ to the main picture. Use one timeline and one asset set for Web and MP4 outputs.
    that as an absent plugin or silently switch providers. Use another provider
    only for an explicit user choice, a host requirement, or a disclosed absence
    or unsupported capability; retain that provider's permission requirements.
+   A user-selected built-in still-image tool can supply stage images for local
+   HTML/MP4 composition. Follow [the native-still route and budget guard](references/dependencies.md#native-stills-and-local-composition);
+   image generation success does not establish a built-in video endpoint.
    Use the installed **Sites** workflow for hosted Web delivery. Resolve current
    skills at runtime; never use another user's machine paths, copied credentials
    or invented tool IDs.
@@ -93,10 +96,22 @@ starting view before deriving the completion concept and exterior stages; do not
 reconstruct a fictional old house backwards from the new-house target. Label
 photo-derived renders separately from original photos and independent concepts.
 
-For new generation, read PixVerse's relevant video/image workflow and use its
+For PixVerse generation, read its relevant video/image workflow and use its
 current capability checks, reference chains, preflight and confirmation policy.
 Avoid giant prompts that attempt every building stage in one uncontrolled shot.
 Reuse accepted assets and keep bounded repairs within the agreed result.
+
+For an explicitly selected native image route, read its current host skill, use
+the actual exposed image tool and preserve references according to its contract.
+Save returned assets inside the private project before referencing them. Record
+provider, parent IDs, prompt set, returned dimensions and reported usage; leave
+model/cost unknown when not exposed. Never call an unspecified model "free".
+
+Check stage continuity before export: cleared-site images must remove all subject
+structures intended for demolition, including carports. Foundations must cover
+the selected new footprint, including its garage. Match frame and roof geometry
+to the target; inspect the actual presentation crop so roof ridges remain visible.
+Keep unrelated neighbouring structures intact and label conceptual interior views.
 
 Prepare one clean PNG/JPEG/WebP per stage. Crop contact-sheet panels through the
 media editing workflow before passing them to the renderer. Do not ship clients'
@@ -127,7 +142,12 @@ python3 <skill-root>/scripts/build_timeline.py /project/timeline.json \
   workflow, keep this stable-shell rule and preserve the accepted references.
 - Validate the encoded duration, first/final state, text legibility and several
   transitions. Validate Web node selection, pause/scrub, image loading and mobile
-  layout where the preview runtime allows. Report unperformed checks honestly.
+  layout where the preview runtime allows. Compare final embedded image bytes
+  with selected files after any repair. Verify actual encoded crops as well as
+  source images. Record unsupported fullscreen or a blocked preview refresh;
+  do not bypass browser restrictions or describe earlier checks as final visual
+  verification. Continue independent file/video checks and report the remaining
+  verification limit honestly.
 - Save artifacts through the host's persistent file workflow. Return only the
   requested formats and actual saved/deployed locations. Keep unsuccessful
   generation or a missing format visible; never claim both were completed when

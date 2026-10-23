@@ -1,6 +1,6 @@
 {
   "name": "cypress-timeline",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Address- or reference-led rebuild simulations and milestone reports as Web and MP4.",
   "author": {
     "name": "LabCubes",
@@ -23,7 +23,7 @@
   "interface": {
     "displayName": "Cypress-timeline",
     "shortDescription": "Web and MP4 progress timelines",
-    "longDescription": "Research an Australian address or use supplied site/design references to create hypothetical rebuild and milestone reports. Keep the outer frame stable while pictures crossfade, export offline interactive HTML or 1080p MP4, and use PixVerse for media and Sites for hosting.",
+    "longDescription": "Research an Australian address or use site/design references to create hypothetical rebuild timelines. Keep the outer frame stable and export offline HTML or 1080p MP4. Prefer PixVerse for media; support user-selected host image tools for stills and Sites for hosting.",
     "developerName": "LabCubes",
     "category": "Creativity",
     "capabilities": [
@@ -43,6 +43,10 @@
           "plugin": "pixverse@openai-curated-remote",
           "reviewedVersion": "1.3.3",
           "requiredFor": [
+            "pixverse-generation",
+            "pixverse-editing"
+          ],
+          "preferredFor": [
             "new-media",
             "advanced-editing"
           ]

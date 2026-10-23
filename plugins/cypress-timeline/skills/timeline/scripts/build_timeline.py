@@ -2,7 +2,7 @@
 """Build offline Web and MP4 progress reports from one validated timeline.
 
 No models, package installation, network access, authentication or publication
-occur here. Asset creation belongs to PixVerse; hosted Web delivery to Sites.
+occur here. Asset creation belongs to the selected provider; hosting to Sites.
 """
 from __future__ import annotations
 

@@ -19,7 +19,7 @@ def main() -> None:
     legacy = json.loads((package / ".codex-plugin/plugin.json").read_text())
     assert portable["$schema"] == "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json"
     assert portable["name"] == legacy["name"] == "cypress-timeline"
-    assert portable["version"] == legacy["version"] == "0.2.4"
+    assert portable["version"] == legacy["version"] == "0.2.5"
     interface = portable["extensions"]["com.openai"]["interface"]
     assert interface == legacy["interface"]
     assert len(interface["shortDescription"]) <= 30
