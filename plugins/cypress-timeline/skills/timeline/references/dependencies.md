@@ -45,7 +45,8 @@ Use Sites for requested hosting. For a request specifically for an offline HTML,
 use the local output and do not publish merely to satisfy a dependency.
 
 For address-led work, discover actual capabilities first and follow their current
-restrictions. Last Sold can supply location/map context when installed; a REA
+restrictions. Prefer suitable REA plugin capabilities to locate a real street-facing
+starting photo. Last Sold can supply location/map context when installed; a REA
 for-sale connector may be insufficient for arbitrary or sold addresses. Native
 Web/source-page research can supply an alternative; official parcel/planning
 information depends on jurisdiction and accessibility. Do not require an Iris,
@@ -53,3 +54,10 @@ REA or map plugin installation when existing tools suffice. The package ships no
 provider keys, property database, address endpoint or automatic scraper. Share
 only necessary address/site information with research services and only permitted
 assets with media providers; do not send private intake notes to hosting.
+
+Google Street View is an optional real-image source only when a suitable host
+integration is actually connected and authorized; it is not a bundled or required
+dependency. If unavailable, report the gap without claiming a pin/aerial is street
+view, creating an API client, obtaining keys or enabling billing. Follow the
+[starting-image selection](address-rebuild.md#choose-the-starting-image) workflow
+for source matching, dates, allowed model input, transformations and attribution.
