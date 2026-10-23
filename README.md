@@ -29,7 +29,7 @@ investment and development workflows through 18 coordinated Skills. See the
 codex plugin add iris-console@labcubes-plugin-market
 ```
 
-### Cypress-timeline 0.2.4
+### Cypress-timeline 0.2.5
 
 Create milestone progress presentations as interactive Web/HTML, MP4, or both.
 Start from site/design references or an Australian address for a sourced,
@@ -40,6 +40,8 @@ using suitable REA capabilities and optional connected street-level sources.
 The outer frame stays visible while the main picture crossfades. Prefer available
 PixVerse workflows for generated media and use Sites for hosted delivery;
 local existing-asset exports need neither connection.
+An explicitly selected host image tool can also supply stage stills for local
+HTML/MP4 composition; a working image tool does not imply a video endpoint.
 See the [plugin README](plugins/cypress-timeline/README.md).
 
 ```bash

@@ -1,8 +1,13 @@
 # Dependency contract
 
+- [Media provider priority](#media-provider-priority)
+- [Native stills and local composition](#native-stills-and-local-composition)
+- [Hosting and property sources](#hosting-and-property-sources)
+
 | Dependency | Role | Required for |
 | --- | --- | --- |
-| `pixverse@openai-curated-remote` | Reference-controlled media generation, motion, audio and editorial work | New generated media or advanced media editing |
+| `pixverse@openai-curated-remote` | Preferred reference-controlled media generation, motion, audio and editorial work | When the selected generation/editing route uses PixVerse |
+| Actual host-provided image tool and its current skill | User-selected still generation/editing for local composition | Only for an eligible alternative provider route; not a video endpoint |
 | `sites@openai-curated-remote` | Web preview and hosted delivery | Publishing a Web version |
 | Suitable host-connected address/map/property tools or native Web search | Address resolution and permitted property/parcel source research | Address/listing-led simulation; no single provider is mandatory |
 | Python 3.10+ standard library | Timeline validation, offline HTML and MP4 orchestration | Bundled renderer |
@@ -35,11 +40,48 @@ disclosed absence or unsupported capability; observe its own permissions and
 record which provider was used. This priority does not authorize installation,
 login, purchases or changes to account preferences by itself.
 
+Preflight the complete intended batch before spending. A positive balance alone
+does not show that it can cover all planned assets. If relevant prior actual
+usage suggests a shortfall, disclose the estimate and its basis, distinguish it
+from a provider quote, and keep the concrete plan ready rather than knowingly
+spending the remaining credits on a single image of an unfinishable batch.
+Continue independent preparation; await a sufficient budget or an eligible user-
+selected alternative. Do not purchase credits or switch providers automatically.
+
 If PixVerse is absent, find its actual discoverable plugin before offering
 connection. Keep independent timeline planning and existing-asset exports moving;
 do not generate replacement assets merely to exercise the preferred provider.
 If generated motion was requested, disclose a generation blocker; a still-image
 report is a different output and needs the user's acceptance.
+
+## Native stills and local composition
+
+Use this route when the user explicitly selects it or another eligible condition
+above applies. Discover current tool availability; a listed tool is not proof
+that a previous endpoint error is fixed. Try the first required image using its
+supported schema, without adding an API/CLI fallback, key requirement or guessed
+model. Follow the host image skill for generation, edits, reference inspection,
+batching and file handling. If it fails, preserve the concrete error and observe
+that workflow's fallback/permission requirements rather than retrying blindly.
+
+Generate the locked initial scene first, then the completed target and dependent
+milestones; supply explicit parent references. The real-site-photo selection and
+reuse requirements apply equally to every provider. If no reusable photo exists,
+retain the recorded independent-concept disclosure in both output formats.
+
+Use the bundled renderer to compose these stills into offline interactive HTML
+and a silent keyframe MP4. Describe this as still generation plus local video
+composition, not native video generation or continuous construction footage.
+Actual native video generation requires a separately exposed, supported video
+capability. Do not infer it from a working image tool or invent an endpoint.
+
+Record actual returned image dimensions separately from the output canvas;
+upscaling to 1080p does not add native source detail. Include the prompt set and
+asset provenance in a private source handover when requested. Built-in tools may
+not report a model ID or price: mark these unknown, and report zero PixVerse
+usage only when no PixVerse generation was submitted for that work.
+
+## Hosting and property sources
 
 Use Sites for requested hosting. For a request specifically for an offline HTML,
 use the local output and do not publish merely to satisfy a dependency.

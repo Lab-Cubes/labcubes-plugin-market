@@ -1,4 +1,4 @@
-# Cypress-timeline 0.2.4
+# Cypress-timeline 0.2.5
 
 Turn available site/design references and project milestones into an interactive Web
 timeline, an MP4 progress report, or both. The outer presentation frame stays
@@ -42,7 +42,7 @@ Prefer an actual site photograph or a faithful render based on it for the starti
 image. Retain supplied photos; otherwise first discover applicable REA plugin
 capabilities, then permitted source-page photos, then an optional connected street-
 level source such as Google Street View. Check the property, imagery date and
-allowed reuse before passing a photo to PixVerse. Lock this starting camera before
+allowed reuse before passing a photo to any media provider. Lock this camera before
 deriving the completion concept and exterior stages. Record photo-derived renders
 and independent concepts distinctly; report source gaps before using a generic
 reconstruction. Google Street View API integration is not included in this release.
@@ -60,6 +60,20 @@ images can produce offline HTML without either connection. The bundled MP4 path
 requires Python 3.10+, FFmpeg/ffprobe and a language-capable font; it exports a
 silent 1920×1080 keyframe report. Continuous generated motion is a separate,
 explicit PixVerse route and may require account entitlement and credits.
+
+When the user selects a supported built-in image tool, follow its current host
+workflow to generate the initial scene, completed target and missing stage stills,
+then compose the same offline HTML and silent MP4 locally. This does not require
+a built-in video endpoint and must not be described as generated continuous
+footage. Inspect actual returned dimensions and do not invent a model ID or price.
+PixVerse remains the default preference; a runtime or budget blocker alone does
+not authorize a silent provider switch. Check the complete planned batch against
+available balance and relevant prior usage before spending on a partial batch.
+
+Check cleared structures, garage foundations, two-storey frame/roof continuity,
+actual encoded crops and final embedded images after repairs. Preserve honest
+limitations when preview/fullscreen or mobile checks are unavailable. Keep client
+imagery, prompts and source handovers private rather than adding them here.
 
 The default whole report is 30 seconds, divided equally across milestones and
 shared by Web at 1× and MP4. Explicitly supplied stage timing remains effective;

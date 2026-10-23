@@ -49,6 +49,19 @@ directory and can replace those generated filenames; use a fresh/versioned outpu
 directory unless replacing the previous output was requested. Temporary rendering
 files are removed on exit. The caller owns persistent output storage.
 
+Inspect source images and actual encoded presentation crops. `cover` uses the
+wide 1800×640 picture area and can clip a tall two-storey frame or roof; preserve
+the locked camera while repairing the asset, or use `contain` when full-image
+visibility is needed. Web's picture-only drift may tighten the crop further.
+Check the roof throughout its displayed stage, not only the unscaled source.
+Keep generation resolution separate from the 1920×1080 output canvas.
+
+After replacing an image, rebuild both requested formats from the same selected
+assets. Check final embedded Web image bytes against those files and inspect the
+new encoded stage. Reuse still-applicable control tests when player code is
+unchanged, but record which revision was tested and any final preview limitation.
+An unsupported fullscreen API or blocked preview must not be labelled as passed.
+
 For this conversation's illustrative construction sequence, a reusable starting
 schedule is foundations 1–6, frame 7–10, enclosure 11–20, interior 21–30, fit-off
 31–36, landscape 37–40, inspection/handover 41–44 weeks. Re-estimate for each real
