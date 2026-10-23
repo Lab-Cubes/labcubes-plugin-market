@@ -72,14 +72,26 @@ each asset's origin and each stage's observed/forecast/illustrative status.
 - Preserve the site's footprint, camera, tree and neighbouring geometry across
   exterior stages. Use a different viewpoint only when it conveys meaningful
   progress, such as interior fit-off. Label invented interiors as conceptual.
-- Keep the user's actual starting photo and selected finished reference where
-  supplied. Otherwise prepare clearly labelled illustrative starting/target
-  images under the input contract. Generate only missing required assets; do not
-  replace supplied design decisions or claim generated views are actual photos.
+- Keep the authorized real starting photo, supplied or researched, and the user's
+  selected finished reference. Prefer a faithful photo-derived render when a
+  rendered start is needed; use an independent concept only after following
+  starting-image selection and recording the fallback reason. Generate only
+  missing required assets; do not replace supplied design decisions or claim
+  generated views are actual photos.
 - Explain whether the deliverable is a keyframe presentation or generated motion.
   Keep factual annotations and exact typography in deterministic composition.
 
 ## Prepare assets
+
+**Prefer a real site photograph or a render derived from that photograph for the
+initial image.** Preserve an applicable user-supplied site photo; otherwise first
+discover suitable REA plugin capabilities to find the matched property's actual
+street-facing image. Follow [starting-image selection](references/address-rebuild.md#choose-the-starting-image)
+before inventing a starting scene. If available and authorized, Google Street View
+is an optional alternative source, not an assumed installed API. Select the real
+starting view before deriving the completion concept and exterior stages; do not
+reconstruct a fictional old house backwards from the new-house target. Label
+photo-derived renders separately from original photos and independent concepts.
 
 For new generation, read PixVerse's relevant video/image workflow and use its
 current capability checks, reference chains, preflight and confirmation policy.
@@ -131,3 +143,6 @@ misrepresented as an actual site record or engineering certification; inferred
 designs are labelled and the schedule's included periods and origin are explicit.
 For address-led work, the selected property scope matches the evidence, source
 links/attribution accompany outputs and inferred site geometry remains labelled.
+Record the starting-image source search and selection, source date/uncertainty,
+parent photo for derived renders, and any real-photo fallback reason. Verify that
+the matched site and visible street context survive the derived exterior views.

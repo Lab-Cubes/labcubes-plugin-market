@@ -1,4 +1,4 @@
-# Cypress-timeline 0.2.3
+# Cypress-timeline 0.2.4
 
 Turn available site/design references and project milestones into an interactive Web
 timeline, an MP4 progress report, or both. The outer presentation frame stays
@@ -37,6 +37,15 @@ explicit. A missing REA record or reusable photo can fall back to other permitte
 sources and a labelled concept. This uses host research capabilities; it does not
 provide a standalone address API or guarantee approval, exact site geometry or
 third-party imagery reuse. Source links and required credits accompany outputs.
+
+Prefer an actual site photograph or a faithful render based on it for the starting
+image. Retain supplied photos; otherwise first discover applicable REA plugin
+capabilities, then permitted source-page photos, then an optional connected street-
+level source such as Google Street View. Check the property, imagery date and
+allowed reuse before passing a photo to PixVerse. Lock this starting camera before
+deriving the completion concept and exterior stages. Record photo-derived renders
+and independent concepts distinctly; report source gaps before using a generic
+reconstruction. Google Street View API integration is not included in this release.
 
 Prefer PixVerse whenever its plugin/workflow is available for new images,
 construction-stage stills, videos, audio and advanced media editing. Read its

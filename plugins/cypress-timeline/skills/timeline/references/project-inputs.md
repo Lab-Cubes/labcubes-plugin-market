@@ -49,15 +49,20 @@ For assets prepared for the presentation, also record:
 - Target status: user-selected presentation target or still a proposal. Selection
   of a concept for this presentation is distinct from statutory approval.
 - Coverage: which stage or design decision it can support and which it cannot.
+- Real starting-image search: applicable supplied photo, REA connector/page
+  candidates, optional connected street-level source, property match, access and
+  capture dates, reuse/attribution conditions, selected camera and fallback reason.
+  A photo-derived render keeps its original parent photo ID and is illustrative;
+  an independent concept must not be labelled as a site photograph or street view.
 
 ## Route the available combinations
 
 | Site and design evidence | Starting state | Required preparation | Final target |
 | --- | --- | --- | --- |
-| Existing house; no design | Supplied existing-house photo, if available | Resolve rebuild versus renovation; propose a labelled concept when design is in scope | Selected concept; never described as an existing approved design |
-| Existing house; design supplied | Actual existing-house photo, if available | Reconcile supplied design with site evidence; add demolition/clearance only for a rebuild | Supplied matching exterior render, or a derived view tied to the available drawings |
-| Vacant land; no design | Actual vacant-land photo, if available | Propose a concept within stated dimensions/preferences; disclose unknown site constraints | Selected concept with assumptions |
-| Vacant land; design supplied | Actual vacant-land photo, if available | Preserve supplied design identity; create only missing views/stages | Supplied matching render or a clearly identified derived view |
+| Existing house; no design | Actual site photo or its faithful derived render; discover a suitable REA/street-level source if not supplied | Resolve rebuild versus renovation; propose a labelled concept when design is in scope | Selected concept; never described as an existing approved design |
+| Existing house; design supplied | Actual site photo or its faithful derived render | Reconcile supplied design with site evidence; add demolition/clearance only for a rebuild | Supplied matching exterior render, or a derived view tied to the available drawings |
+| Vacant land; no design | Actual vacant-land photo or its faithful derived render | Propose a concept within stated dimensions/preferences; disclose unknown site constraints | Selected concept with assumptions |
+| Vacant land; design supplied | Actual vacant-land photo or its faithful derived render | Preserve supplied design identity; create only missing views/stages | Supplied matching render or a clearly identified derived view |
 
 `partial` designs follow the supplied-design route for the information they
 actually contain, and the concept route only for missing decisions. In particular:
@@ -69,8 +74,11 @@ actually contain, and the concept route only for missing decisions. In particula
 - Conflicting revisions or a render inconsistent with drawings require resolving
   the controlling reference before generating dependent images. Keep useful
   independent work moving; do not silently combine incompatible versions.
-- If there is no site photo, continue from permitted plans, aerials or a user
-  description when adequate for the brief. Label any reconstructed initial view
+- If no site photo was supplied, first follow
+  [starting-image selection](address-rebuild.md#choose-the-starting-image) to find
+  a permitted real photo. If none is reusable, record the fallback reason and
+  continue from permitted plans, aerials or a user description when adequate for
+  the brief. Label any independently reconstructed initial view
   "illustrative starting state"; never claim it is an actual site photograph.
   Request a real photograph only when a faithful photographic start is required.
 - If neither site evidence nor a design brief supports a property-specific
